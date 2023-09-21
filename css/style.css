@@ -21,8 +21,16 @@ body{
 #navbar{
     position:sticky;
     display:flex;
+   align-items:center;
     top:0px;
     align-items:center;
+}
+.logo{
+    margin:3px 23px;
+}
+.logo img{
+    height:45px;
+    padding:3px ;
 }
 #navbar ul{
     display:flex;
@@ -74,7 +82,7 @@ body{
 /* Home section */
  #Home::before{
     content:' ';
-   height:600px;
+   height:620px;
     width:100%;
     position:absolute;
     background-image:url("/images/Bg img/bg1.jpg") ;
@@ -90,20 +98,22 @@ body{
   color:white;
   justify-content:center;
   align-items:center;
-  padding:60px 200px;
-  height:550px;
+  padding:3px 200px;
+  height:540px;
 }
 #Home h1{
     font-family: 'Bree Serif', serif;
 }
-#Home button{
-    height : 30px;
-    width:120px;
-    border-radius:15px;
-    background-color:transparent;
-    border :2 px solid white;
-    color:white;
-    cursor:pointer;
+.btn{
+  padding: 6px 24px;
+    border-radius: 8px;
+    margin: 17px;
+    background-color: rgb(237, 143, 143);
+    color: white;
+    cursor: pointer
+}
+.btn button{
+    border-color:white;
 }
 
 
@@ -119,19 +129,22 @@ body{
     justify-content:center;
 }
 .box{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
     height: 210px;
        border:3px solid brown;
        background-color:rgb(230, 228, 228);
-       padding: 25px;
+       padding: 30px;
        margin:15px;
        border-radius:10px;
 }
 .box img{
     height: 105px;
-    width: 135px;
+    display:block;
+     margin:auto;
+
+}
+.box p{
+    font-family: 'Bree Serif', serif;
+    font-size:1rem;
 }
 
 
@@ -170,18 +183,18 @@ body{
 }
 #client-section{
     height:300px;
+    
 }
-#client-section ul{
+.our-clients{
+    height:280px;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
+    align-items:center;
 
 }
-#client-section ul li{
-    list-style:none;
-}
-#client-section ul img{
-    height:200px;
-    width:200px;
+.item-img img {
+    height:130px;
+    padding:34px;
 }
 
 /* Contact us */
